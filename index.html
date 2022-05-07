@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <input id="palabra" placeholder="Ingrese texto aqui..." type="text">
-    <button id="btn">Encriptar</button>
-    <button id="desencriptar">Desencriptar</button>
-    <div>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button>Copiar</button>
-    </div>
+     <section class="container">
+        
+        <textarea  id="texto" placeholder="Ingrese texto aqui..." cols="30" rows="10" onkeyup="soloMinuscula(this)"></textarea>
+        <div class="botones"> 
+            <div class="aviso">
+                <img class="icono"src="images/!.png" alt="importante">
+                <p>Solo letras minúsculas y sin acento</p>
+            </div> 
+            <div class="botonesContainer">
+            <button class="estiloBoton" id="encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="estiloBoton" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+            
+        </div>
+        
+        <div id="textarea2" class="textarea">
+            <textarea disabled name="" id="resultado" cols="30" rows="10"></textarea>
+            <button hidden class="estiloBoton" id="copiar" onclick="clickCopiar()">Copiar</button>
+        </div>
+
+    </section>
     
-    <script src="script.js"></script>
+    <footer>
+        <div class="redes"><div class="redesContainer">
+            <a href=""><div class="red github"></div> </a>
+            
+            <a href=""><div class="red linkedin"></div></a>
+            
+        </div>
+        <p class="derechos">©2022 0xdiegoo</p>
+          
+        </div>
+    </footer>
+    
+    <script src="/js/script.js"></script>
 </body>
 </html>
