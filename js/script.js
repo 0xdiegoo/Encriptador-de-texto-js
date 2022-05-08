@@ -49,6 +49,6 @@ function clickCopiar(){
 
 }
 function soloMinuscula(textarea){
-  let caracteres = /[^a-z," "]/g
+  let caracteres = /[^a-z," ",ñ]/g
   textarea.value = textarea.value.replace(caracteres, "").toLowerCase()
 }
