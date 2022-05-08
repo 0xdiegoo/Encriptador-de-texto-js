@@ -213,7 +213,7 @@ footer{
       "resultado"
       "botones"
       "footer";
-    height: 100vh;
+    height: auto;
   }
 .aviso{
     padding: 0 0 0 10%;
