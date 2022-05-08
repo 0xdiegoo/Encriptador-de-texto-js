@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   background: #a8dadc;
   margin: 0;
-  padding: 20px 0;
+  padding: 18px 0 0 0;
   height: 100vh;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .container {
   display: grid;
-  height: auto;
+  height: 98.1vh;
   justify-items: center;
   grid-template-areas:
     "texto resultado"
@@ -136,6 +136,7 @@ footer{
     justify-content: center;
     padding: 10px 0 ;
     width: 100%;
+    align-self: flex-end;
 
 }
 .redes{
@@ -197,6 +198,12 @@ footer{
     }
 }
 
+@media (min-height:940px){
+  footer{
+    margin-top: 47px;
+  }
+}
+
 @media (min-width: 1440px) and (max-width:1660px) {
   #texto {
     padding: 0 0 0 17%;
@@ -213,7 +220,7 @@ footer{
       "resultado"
       "botones"
       "footer";
-    height: auto;
+    height: 100vh;
   }
 .aviso{
     padding: 0 0 0 10%;
@@ -358,4 +365,3 @@ footer{
   }
  
 }
-
