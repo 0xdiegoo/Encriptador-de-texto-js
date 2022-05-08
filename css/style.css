@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   background: #a8dadc;
   margin: 0;
+  padding: 20px 0;
   height: 100vh;
 }
 
@@ -12,7 +13,8 @@ body {
   background: url(../images/1.png) no-repeat;
   background-size: contain;
   background-position: center;
-  width: 380px;
+  width: 340px;
+  
   height: 547px;
   resize: none;
   border: none;
@@ -39,7 +41,7 @@ body {
   height: 200px;
   border: none;
   outline: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #1d3557;
   background-color: #a8dadc;
   margin: 117px 0 0 0;
@@ -82,16 +84,16 @@ body {
 
 .estiloBoton {
   border: none;
-  font-size: 2rem;
-  height: 76px;
-  width: 360px;
+  font-size: 1.8rem;
+  height: 70px;
+  width: 324px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.46);
   cursor: pointer;
 }
 
 .estiloBoton:hover {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   transition: 0.5s;
 }
 
@@ -117,22 +119,23 @@ body {
   justify-content: center;
   grid-area: resultado;
   background-color: #ffffff;
-  width: 380px;
-  height: 800px;
+  width: 330px;
+  height:702px;
   padding: 70px 50px 30px 50px;
   border-radius: 10px;
   margin: 50px 0 0 0;
 }
 
 footer{
-    margin: 18px 0 0 0;
+    margin: 17px 0 0 0;
     grid-area: footer;
-    height: 70px;
+    height: 60px;
     background-color: #1f5678;
     color: #f1faee;
     display: flex;
     justify-content: center;
     padding: 10px 0 ;
+    width: 100%;
 
 }
 .redes{
@@ -147,18 +150,19 @@ footer{
 }
 .derechos{
     margin: 10px 0 0 0;
+    font-size: 14.5px;
 }
 
 .red{
     background: #f1faee;
     margin: 0 20px;
-    width: 30px;
-    height: 30px;
-    mask-size: 30px;
-    -webkit-mask-size: 30px;
-    -o-mask-size: 30px;
-    -moz-mask-size: 30px;
-    -ms-mask-size: 30px;
+    width: 27px;
+    height: 27px;
+    mask-size: 27px;
+    -webkit-mask-size: 27px;
+    -o-mask-size: 27px;
+    -moz-mask-size: 27px;
+    -ms-mask-size: 27px;
     mask-repeat: no-repeat ;
     -webkit-mask-repeat: no-repeat ;
     -o-mask-repeat: no-repeat ;
@@ -207,7 +211,8 @@ footer{
     grid-template-areas:
       "texto"
       "resultado"
-      "botones";
+      "botones"
+      "footer";
     height: 100vh;
   }
 .aviso{
@@ -239,15 +244,26 @@ footer{
     height: 70px;
   }
   footer{
-      margin: 100px 0 0 0;
+      margin: 10px 0 0 0;
 
   }
   
 }
 
-@media (min-width:890px)and (max-width:1300px){
+@media (min-width:760px)and (max-width:1300px){
     .aviso{
         padding: 0 0 0 23%;
+    }
+
+    .textarea{
+      height: 500px;
+    }
+    .botones{
+      margin: 30px 0 0 0;
+    }
+    #texto{
+      margin: 30px 0 0 0;
+      height: 150px;
     }
 }
 
@@ -281,13 +297,15 @@ footer{
     width: 100%;
   }
   #texto {
+    margin: 30px 0 0 0;
     width: 100%;
+    height: 100px;
     padding: 0;
     font-size: 2rem;
   }
 
   footer{
-      margin: 200px 0 0 0;
+      margin: 10px 0 0 0;
   }
 }
 
@@ -306,6 +324,9 @@ footer{
   }
   .icono{
       margin: 18px 0 0 0;
+  }
+  .textarea{
+    height: 357px;
   }
 
   .botonesContainer{
@@ -336,7 +357,8 @@ footer{
   }
 
   footer{
-      margin: 70px 0 0 0;
+      margin: 10px 0 0 0;
   }
  
 }
+
