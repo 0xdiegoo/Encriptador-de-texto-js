@@ -24,7 +24,7 @@ body {
 
 .container {
   display: grid;
-  height: 90vh;
+  height: 98.1vh;
   justify-items: center;
   grid-template-areas:
     "texto resultado"
@@ -310,9 +310,6 @@ footer{
 }
 
 @media (max-width: 485px) {
-  .container {
-    height: 90vh;
-  }
   .estiloBoton {
     font-size: 1.5rem;
   }
