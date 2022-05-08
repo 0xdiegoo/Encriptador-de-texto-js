@@ -24,7 +24,7 @@ body {
 
 .container {
   display: grid;
-  height: 98.1vh;
+  height: auto;
   justify-items: center;
   grid-template-areas:
     "texto resultado"
@@ -121,9 +121,9 @@ body {
   background-color: #ffffff;
   width: 330px;
   height:702px;
-  padding: 20px 50px 30px 50px;
+  padding: 70px 50px 30px 50px;
   border-radius: 10px;
-  margin: 50px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 footer{
